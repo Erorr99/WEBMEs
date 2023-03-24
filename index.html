@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+   <link rel="stylesheet" href="style.css">
+   <title>MYPROFILE</title>
+</head>
+<body>
+   <input type="checkbox" id="check">
+   <section>
+      <div class="navbar">
+         <div class="logo"><b>m</b><b>e</b></div>
+         <ol class="menuitems">
+            <li><a href="#">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">more</a></li>
+         </ol>                                                                                                                                                                                                 
+         <label for="check" class="fa fa-bars"></label>
+      </div>
+      <div class="container">
+         <div class="text_container">
+            <span class="topline"> Hello</span>
+            <h1>I'm <span class="mutiText"></span></h1>
+            <title> text </title><br>
+            <p>I love creating and drawing and coding. <br> So put those two things together, it's awesome.</p>
+            <a href="https://discordapp.com/users/306734147534192640#" class="btn">Discord!</a>
+         </div>
+         <div class="image_container">
+            <div class="imgbox">
+               <img src="img.png" alt="user pic">
+            </div>
+            <span class="animblob"></span>
+         </div>
+      </div>
+
+      <div class="text">
+         <br>
+         <title> ABOUT ME</title>
+         <h2>ABOUT ME</h2>
+         <p> HI! <br> My name is Nuttawee but you can call me V !
+         I'm from Thailand. <br> I'm studying computer science. <br> It's frustrating and fun at the same time lol I like to draw and play games (mostly games), but lately I've been playing music. and then bothering to write code is therefore the origin of this website
+      </p><br>
+      </div>
+   </div>
+
+      <div class="icons">
+         <div class="toggleSwitch">
+            <i class="fa fa-sun"></i><br>
+            <i class="fa fa-moon"></i>
+         </div>
+         <i class="fa fa-instagram"><span>insta</span></i><br>
+         <i class="fa fa-github"><span>github</span></i><br>
+         <i class="fa fa-facebook"><span>  facebook</span></i>
+      </div> 
+      <div class="parallelogram">
+         <img src="s1.png" alt="s1">
+      </div>
+      <div class="parallelogram2"></div>
+      <script>
+         const toggleSwitch = document.querySelector('.toggleSwitch');
+         toggleSwitch.addEventListener('click', function(){
+            document.body.classList.toggle('switch');
+         });
+      </script>
+      <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+      <script>
+          var typingEffect = new Typed(".mutiText",{
+              strings : ["coder","artist"],
+              loop : true,
+              typeSpeed : 110,
+              backSpeed : 80,
+              backDelay : 2000,
+          })
+
+          
+      </script>
+
+   </section>
+</body>
+</html>

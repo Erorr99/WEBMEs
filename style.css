@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Russo One', sans-serif;
+}
+:root{
+   --primary: #f8f6f6;
+   --secondary: #2b2c2e;
+   --textcolor: #a11515;
+   --main: #f3f1f1;
+}
+.switch{
+   --primary: #2b2c2e;
+   --main: #262729;
+   --secondary: #f8f6f6;
+   transition: ease-in 0.7s;
+}
+
+
+.mutiText{
+   color: #b41212;
+   text-transform: capitalize;
+}
+body{
+   width: 100%;
+   min-height: 100vh;
+   background: var(--primary);
+   transition: ease-in 0.5s;
+}
+section{
+   width: 100%;
+   position: relative;
+}
+.navbar{
+   width: 100%;
+   position: fixed;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0.1vw 6vw;
+   background: var(--main);
+   z-index: 1000;
+   transition: ease-in 0.7s;
+}
+
+
+
+.topline{
+   display: block ;
+   position: relative;
+   font-size: 50px;
+   letter-spacing: 6px;
+   color: var(--secondary);
+}
+.topline::after{
+   position: absolute;
+   content: '';
+   height: 4px;
+   width: 45px;
+   background-color: #b41212;
+   bottom: 10px;
+}
+b{
+   font-size: 70px;
+   color: #b41212;   
+}
+b:hover{
+   color: #ff0800;
+}
+
+h1{
+   display: block;
+   font-size: 6em;
+   font-weight: 900;
+   color: var(--secondary);
+}
+
+.logo{
+   font-size: 3vw;
+   color: var(--secondary);
+   font-weight: 800;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+   padding: 0.5vw 1vw;
+   border-radius: 5px;
+   margin: autos;
+}
+.menuitems{
+   display: flex;
+   margin: auto 0;
+}
+.menuitems li{
+   list-style: none;
+   margin: 0 1.5vw;
+}
+.menuitems li a{
+   display: block;
+   color: var(--secondary);
+   font-size: 1.5vw;
+   letter-spacing: 4px;
+   text-decoration: none;
+   text-transform: uppercase;
+}
+.menuitems li:hover a{
+   color: #b41212;
+}
+.container{
+   display: flex;
+   width: 100%;
+   min-height: 100vh;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+}
+.text_container a{
+   padding: 0vw;
+   margin: 0vw;
+   width: 20vw 10vw;
+}
+
+.text_container{
+   width: 50%;
+   padding-left: 5rem;
+   padding-top: 5rem;
+}
+.text_container h2{
+   font-size: 10vw;
+   font-weight: 900;
+   line-height: 10vw;
+   text-transform: capitalize;
+}
+.text_container h2::first-line{
+   color: var(--primary);
+   letter-spacing: 5px;
+   text-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+.text_container h5{
+   color: var(--primary);
+   font-size: 2vw;
+   font-weight: 300;
+   text-align: left;
+   margin-top: 20px;
+   margin-right: 10vw;
+   text-transform: capitalize;
+}
+.text_container p{
+   font-size: 2vw;
+   font-weight: 400;
+   color: var(--secondary);
+   margin-top: 30px;
+   z-index: 1000;
+}
+.text_container .btn{
+   display: inline-block;
+   color: var(--primary);
+   background: var(--secondary);
+   margin-top: 2vw;
+   font-size: 1.5vw;
+   text-decoration: none;
+   text-transform: capitalize;
+   letter-spacing: 2px;
+   padding: 6px 15px;
+   box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+   transition: 0.3s ease;
+}
+.text_container .btn:hover{
+   color: #b41212;
+   letter-spacing: 3px;
+   padding: 6px 18px;
+}
+.image_container{
+   display: flex;
+   width: 50;
+   height: 100%;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+}
+
+.topline h1{
+   position: absolute;
+   top: 0;
+   left: 0;
+   font-size: 10vw;
+   font-weight: 900;
+   color: var(--secondary);
+   z-index: 2;
+}
+
+.imgbox{
+   position: relative;
+   width: calc(130% - 100px);
+   height: 100%;
+   top:-100%;
+   right: 30px;    
+   animation: animateUser 4s linear infinite;
+   z-index: 1;
+}
+@keyframes animateUser{
+   50%{
+       right: 50px;
+       top: -90px;
+   }
+}
+
+.imgbox img{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+}
+.imgbox img:hover { 
+   transform: scale(1.03); 
+   transition: all 0.5s ease;
+}
+
+.icons{
+   position: fixed;
+   top: 50%;
+   right: -15vw;
+   transform: translateY(-50%);
+   z-index: 100;
+}
+.icons .fa{
+   width: 20vw;
+   padding: 1.25vw;
+   font-size: 2.5vw;
+   cursor: pointer;
+   color: var(--primary);
+   background: var(--secondary);
+   transition: 0.5s ease;
+}
+.icons .fa:hover{
+   color: #b41212;
+   transform: translateX(-9vw);
+}
+.icons .fa span{
+   position: relative;
+   font-size: 1.8vw;
+   bottom: 0.3vw;
+   margin-left: 1.8vw;
+}
+
+
+/* now create an animated blob without SVG */
+.animblob{
+   position: absolute;
+   top: 50%;
+   left: 40%;
+   height: 40vw;
+   width: 40vw;
+   transform: translate(-50%,-50%);
+   background: #b41212;
+   animation: animate_blob 8s linear infinite;
+   z-index: 0;
+}
+@keyframes animate_blob{
+   0%,100%{
+      border-radius: 45% 55% 70% 35% / 70% 30% 90% 40%;
+   }
+   25%{
+      border-radius: 55% 45% 30% 35% / 50% 30% 60% 10%;
+   }
+   50%{
+      border-radius: 65% 35% 35% 65% / 40% 60% 30% 70%;
+   }
+   25%{
+      border-radius: 35% 65% 60% 40% / 70% 30% 40% 60%;
+   }
+}
+input{
+   display: none;
+   visibility: hidden;
+   -webkit-appearance: none
+}
+.navbar label{
+   display: none;
+}
+/* now make it responsive */
+@media screen and (max-width: 900px) {
+   body{
+      overflow: auto;
+   }
+   .parallelogram{
+      top: -5vw;
+      position: relative;
+
+   }
+
+   .image_container{
+      position: relative;
+      width: calc(130% - 100px);
+      height: 100%;
+      top:-100%;
+      right: 30px;    
+      animation: none;
+      animation: animateUser 4s linear infinite;
+      z-index: 1;
+   }
+   @keyframes animateUser{
+      50%{
+          right: 5px;
+          top: -9px;
+      }
+   }
+   .logo{
+      font-size: 5vw;
+   }
+   .navbar label{
+      display: block;
+      color: #fff;
+      font-size: 4vw;
+      padding: 1vw 1.5vw;
+      background: #000;
+      cursor: pointer;
+      z-index: 9999;
+   }
+   .navbar label:hover{
+      background: #b41212;
+   }
+   .menuitems{
+      position: fixed;
+      top: 0;
+      right: -40vw;
+      width: 40vw;
+      height: 100%;
+      background: #2b2c2e;
+      padding-top: 15vw;
+      padding-left: 5vw;
+      display: flex;
+      flex-direction: column;
+      transition: 0.3s ease;
+   }
+   .menuitems li a{
+      color: #e7e5e5;
+      font-size: 4vw;
+      margin: 0.5vw 0; 
+   }
+   #check:checked ~ section .navbar .menuitems{
+      right: 0;
+   }
+   .container{
+      flex-wrap: wrap;
+   }
+   .text_container{
+      width: 100%;
+      padding: 15vw 10vw;
+      
+   }
+   .text_container h2{
+      font-size: 18vw;
+      line-height: 18vw;
+   }
+   .text_container h5{
+      font-size: 5vw;
+   }
+   .text_container p{
+      font-size: 3vw;
+   }
+   .text_container .btn{
+      margin-top: 2vw;
+      font-size: 2.5vw;
+   }
+   .image_container{
+      width: 100%;
+      height: 50rem;
+      margin-top: -100px;
+      overflow: hidden;
+   }
+   .imgbox{
+      height: 100%;
+      margin: 0;
+      top: 0;
+      right: -5vw;
+   }
+   .animblob{
+      height: 60%;
+      width: 60%;
+      padding-right: -10vw;
+   }
+   .icons{
+      position: fixed;
+      right: -13.5vw;
+      z-index: 100;
+   }
+   .icons .fa{
+      padding: 2.7vw;
+   }
+   /* now customize scroll bar */
+   ::-webkit-scrollbar{
+      width: 12px;
+   }
+   ::-webkit-scrollbar-track{
+      background-color: #000;
+   }
+   ::-webkit-scrollbar-thumb{
+      background-color: #fff;
+      border-radius: 50px;
+   }
+   
+
+}
+
+@media screen and (max-width: 500px){
+   .topline {
+      top: 40px;
+      position: relative;
+      font-size: 10vw;
+   }
+   .mutiText {
+      position: relative;
+      font-size: 8vh;
+      text-align: left;
+   }  
+   .text_container title{
+      position: relative;
+      font-size: 4vw;
+
+   }
+   .text_container h1{
+      top: 50px;
+      position: relative;
+      font-size: 20vw;
+      text-align: left;
+   }
+   .navbar label{
+      display: block;
+      color: #fff;
+      font-size: 4vw;
+      padding: 2vw 2.5vw;
+      background: #000;
+      cursor: pointer;
+   }
+   .navbar label:hover{
+      background: #b41212;
+   }
+   .imgbox img{
+      position: relative;
+      top: 20px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1;
+   }
+   
+}
+
+.text {
+   position: relative;
+   top: -20vw;
+   left: 0;
+   text-align: right;
+   transform: translate(-2%, 60%);
+   font-size: 2.5vw;
+   line-height: 3.9vw;
+   color: #fff;
+   z-index: 999;
+   margin: auto;
+}
+
+.parallelogram img{
+   position: relative;
+   padding: 0 0 0 0;
+   top: -45vw;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   z-index: 1;
+   margin: auto;
+   z-index: 100;
+}
+
+.toggleSwitch{
+   position: relative;
+}
+.toggleSwitch .fa{
+   position: relative;
+   font-size: 40px;
+   top: 50%;
+   left: 50%;
+   cursor: pointer;
+   transform: translate(-50%, -50%);
+   color: #000;
+
+}
+.fa-sun{
+   display: none;
+   color: #fff;
+}
+.switch .fa-sun{
+   display: block;
+}
+.switch .fa-moon{
+   display: none;
+}
