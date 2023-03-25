@@ -28,6 +28,10 @@ element.style {
    text-transform: capitalize;
    text-shadow: 0 5px 10px rgba(0,0,0,0.5);
 }
+
+body {
+  overflow-x: hidden !important;
+}
 body{
    width: 100%;
    min-height: 100vh;
@@ -657,26 +661,27 @@ input{
    text-shadow: 0 5px 10px rgba(0,0,0,0.5);
 }
 
-.box {
-   position: relative;
-   transition: 0.5s;
-   z-index: 1000;
-   
-}
-
-.box .clip{
-   background: url(cha.jpg);
-   background-size: cover;
-   clip-path: polygon(0 14%, 66% 100%, 100% 21%);
-   transform: translate(100%,10%);
-   transition: 0.5s;
-   width: 42vw;
-   height: 48vw;
-   transform: rotate(12deg);
-}
 
 .box img{
-   position: absolute;
-   transform: translate(100%,500%);
-   top: 20%;
+   background: url(cha.jpg);
+   background-size: cover;
+   clip-path: polygon(0 17%, 58% 100%, 100% 17%);
+   transition: 0.5s;
+   width: 46vw;
+   height: 48vw;
+   transform: rotate(60deg);
+   box-shadow: 0 0 10px rgba(0,0,0,0.5);
+} 
+
+.box img{
+   position: relative;
+   transform: translate(20%,-320%)
 }
+.box {
+   position: relative;
+   top: -16vw;
+   left: 5vw;
+   z-index: 999;
+   width: 50vw;
+
+} 
