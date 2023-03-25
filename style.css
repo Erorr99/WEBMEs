@@ -154,6 +154,7 @@ h1{
    padding: 6px 15px;
    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
    transition: 0.3s ease;
+   z-index: 100;
 }
 .text_container .btn:hover{
    color: #b41212;
@@ -278,6 +279,12 @@ input{
       position: relative;
 
    }
+   .parallelogram3 {
+      position: absolute;
+      transform: translate(0%,-30%)
+      scale(0.55)
+   }
+   .mutiT
 
    .image_container{
       position: relative;
@@ -403,6 +410,11 @@ input{
       position: relative;
       font-size: 10vw;
    }
+   .parallelogram3 {
+      position: absolute;
+      transform: translate(0%,-30%)
+      scale(0.35)
+   }
    .mutiText {
       position: relative;
       font-size: 7.5vh;
@@ -413,13 +425,19 @@ input{
       font-size: 7vw;
 
    }
+   .btn {
+      position: relative;
+      font-size: 5vw;
+      text-align: left;
+      top: 20px;
+   }
 
 
    .description{
       position: relative;
       font-size: 5vw;
       text-align: left;
-      top: 8px;
+      top: 20px;
 
    }
 
@@ -715,4 +733,49 @@ input{
    .hiden{
       transition: none;
    }
+}
+
+.tiltcard{
+   width: 410px;
+   height: 570px;
+   background: rgba(255,255,255,0.25);
+   margin: 0 20px;
+   border-radius: 10px;
+   border: 1px solid rgba(255,255,255,0.18);
+   backdrop-filter: blur(10px);
+   box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+   display: none;
+   align-items: center;
+   justify-content: center;
+
+}
+.js-tilt-glare {
+   background: url('card.jpg');
+   border-radius: 10px;
+   position: absolute;
+   scale: 1;
+   top: -100vw;
+
+}
+.image {
+   display: none;
+}
+.card{
+   position: relative;
+   top: -20vw;
+   left: 0;
+   text-align: right;
+   transform: translate(10%, -300%);
+
+   color: #fff;
+   z-index: 999;
+   margin: auto;
+   padding: auto;
+   text-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+
+.parallelogram3 img{
+   position: absolute;
+   transform: translate(20%,-60%)
+   scale(1.5)
 }
