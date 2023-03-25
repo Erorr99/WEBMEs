@@ -219,10 +219,12 @@ h1{
    position: fixed;
    top: 50%;
    right: -15vw;
-   transform: translateY(-50%);
+   transform: translateY(-60%);
    z-index: 100;
+   padding: 0;
 }
-.icons .fa{
+
+.icons .fa-brands{
    width: 20vw;
    padding: 1.25vw;
    font-size: 2.5vw;
@@ -231,17 +233,16 @@ h1{
    background: var(--secondary);
    transition: 0.5s ease;
 }
-.icons .fa:hover{
+.icons .fa-brands:hover{
    color: #b41212;
-   transform: translateX(-9vw);
+   transform: translateX(-11vw);
 }
-.icons .fa span{
+.icons .fa-brands span{
    position: relative;
    font-size: 1.8vw;
    bottom: 0.3vw;
    margin-left: 1.8vw;
 }
-
 
 /* now create an animated blob without SVG */
 .animblob{
@@ -398,7 +399,9 @@ input{
       background-color: #fff;
       border-radius: 50px;
    }
-   
+   .icons {
+      transform: translateX(1vw);
+   }
 
 }
 
@@ -444,7 +447,9 @@ input{
       object-fit: cover;
       z-index: 1;
    }
-   
+   .icons{
+      transform: translateX(1vw);
+   }
 }
 
 .text {
@@ -477,22 +482,48 @@ input{
    position: relative;
 }
 .toggleSwitch .fa{
-   position: relative;
-   font-size: 40px;
-   top: 50%;
-   left: 50%;
+   position: absolute;
+   top: -500%;
+   right: 0;
+   font-size: 2.5vw;
    cursor: pointer;
-   transform: translate(-50%, -50%);
-   color: #000;
+   color: var(--primary);
+   background: var(--secondary);
+   transition: 0.5s ease;
+
 
 }
 .fa-sun{
    display: none;
-   color: #fff;
+   color:var(--primary);
+}
+
+.fa-moon{
+   color: #e71616;
 }
 .switch .fa-sun{
    display: block;
 }
 .switch .fa-moon{
    display: none;
+}
+
+.icons .fa{
+   width: 20vw;
+   padding: 1.25vw;
+   font-size: 2.5vw;
+   cursor: pointer;
+   color: var(--primary);
+   background: var(--secondary);
+   transition: 0.5s ease;
+}
+.icons .fa:hover{
+   color: #b41212;
+   transform: translateX(-11vw);
+}
+.icons .fa span{
+   position: relative;
+   font-size: 1.8vw;
+   bottom: 0.3vw;
+   margin-left: 1.8vw;
 }
