@@ -515,6 +515,18 @@ input{
    z-index: 100;
 }
 
+
+.parallelogram2 img{
+   position: relative;
+   padding: 0 0 0 0;
+   top: -53vw;
+   left: 00vw;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   z-index: 999;
+}
+
 .toggleSwitch{
    position: relative;
 }
@@ -643,4 +655,28 @@ input{
    margin: auto;
    padding: auto;
    text-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+
+.box {
+   position: relative;
+   transition: 0.5s;
+   z-index: 1000;
+   
+}
+
+.box .clip{
+   background: url(cha.jpg);
+   background-size: cover;
+   clip-path: polygon(0 14%, 66% 100%, 100% 21%);
+   transform: translate(100%,10%);
+   transition: 0.5s;
+   width: 42vw;
+   height: 48vw;
+   transform: rotate(12deg);
+}
+
+.box img{
+   position: absolute;
+   transform: translate(100%,500%);
+   top: 20%;
 }
