@@ -5,13 +5,14 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap">
    <title>MYPROFILE</title>
 </head>
 <body>
    <input type="checkbox" id="check">
    <section>
       <div class="navbar">
-         <div class="logo"><b>m</b><b>e</b></div>
+         <div class="logo"><b>m</b><b>e</b><b>.</b></div>
          <ol class="menuitems">
             <li><a href="#">home</a></li>
             <li><a href="#">about</a></li>
@@ -23,9 +24,15 @@
          <div class="text_container">
             <span class="topline"> Hello</span>
             <h1>I'm <span class="mutiText"></span></h1>
-            <title> text </title><br>
-            <p>I love creating and drawing and coding. <br> So put those two things together, it's awesome.</p>
+            <div class="description">
+               <title> text </title><br>
+               <p>I like to think, create, and draw, so I combined them with writing code. Combine 2 things together, it's AWESOME</p>
+            </div>
             <a href="https://discordapp.com/users/306734147534192640#" class="btn">Discord!</a>
+            <div class="langwrap">
+               <a href="#" language="english" class="active">EN</a>
+               <a href="#" language="thai">TH</a>
+            </div>
          </div>
          <div class="image_container">
             <div class="imgbox">
@@ -38,10 +45,17 @@
       <div class="text">
          <br>
          <title> ABOUT ME</title>
-         <h2>ABOUT ME</h2>
-         <p> HI! <br> My name is Nuttawee but you can call me V !
-         I'm from Thailand. <br> I'm studying computer science. <br> It's frustrating and fun at the same time lol I like to draw and play games (mostly games), but lately I've been playing music. and then bothering to write code is therefore the origin of this website
+         <div class="aim">
+         <span class="first">ABOUT</span>
+         <span class="slide">
+            <span class="second">ME</span>
+         </span>
+      </div>
+      <div class="content">
+         <p> HI! <br> My name is Nuttawee but you can call me V !<br>
+         I'm from Thailand. I'm studying computer science. <br> It's frustrating and fun at the same time lol I like to draw and play games (mostly games), but lately I've been playing music. and then bothering to write code is therefore the origin of this website
       </p><br>
+      </div>
       </div>
    </div>
       <div class="icons">
@@ -76,6 +90,8 @@
           
       </script>
 
+         </script>
+         <script src="script.js"></script>
    </section>
 </body>
 </html>
