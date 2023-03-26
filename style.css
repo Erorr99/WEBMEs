@@ -547,7 +547,6 @@ input{
    object-fit: cover;
    z-index: 1;
    margin: auto;
-   z-index: 100;
 }
 
 
@@ -776,6 +775,8 @@ input{
 
 .parallelogram3 img{
    position: absolute;
+   left: 20vw;
    transform: translate(20%,-60%)
-   scale(1.5)
+   scale(2.7)
+
 }
