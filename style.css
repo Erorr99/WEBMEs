@@ -667,6 +667,8 @@ input{
    font-weight: 400;
    color: var(--secondary);
    margin-top: 20px;
+   width: 550px;
+   border: 1px ;
    z-index: 1000;
    text-shadow: 0 5px 10px rgba(0,0,0,0.2);
 } 
@@ -686,11 +688,14 @@ input{
 }
 
 .content {
+   position: absolute;
    justify-content: right;
    align-items: right;
-   top: 10vw;
+   top: 13vw;
+   width: 1200px;
+   border: 1px ;
    position: relative;
-   left: 10vw;
+   left: 17vw;
    text-align: right;
    font-size: 2.5vw;
    line-height: 3.9vw;
