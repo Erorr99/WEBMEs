@@ -10,7 +10,7 @@
    --primary: #f8f6f6;
    --secondary: #2b2c2e;
    --textcolor: #a11515;
-   --main: #f3f1f1;
+   --main: #dddddd;
 }
 .switch{
    --primary: #2b2c2e;
@@ -102,7 +102,12 @@ h1{
 }
 .menuitems li:hover a{
    color: #b41212;
+   transition: ease-in 0.2s;
 }
+.menuitems li a.active{
+   color: #b41212;
+}
+
 .container{
    display: flex;
    width: 100%;
